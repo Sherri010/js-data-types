@@ -10,21 +10,22 @@
  * Create an array of image sources. Use image1.png, image2.png, and image3.png as the array values.
  */
 
-// Your code here
+var q1=["img1.png","img2.png","img3.png"];
+
 
 /**
  * Question 2
  * Using the array from Question 1, store the first element of the array in variable q2.
  */
 
-// Your code here
+var q2=q1.shift();
 
 /**
  * Question 3
  * Get the length of the first array (number of elements in the array) and store it in variable q3
  */
 
-// Your code here
+var q3=q1.length;
 
 /**
  * Question 4
@@ -32,7 +33,8 @@
  */
 
 
-// Your code here
+var q4=q1.pop(); 
+//var q4=q1[q1.length-1];
 
 
 // ____________________________________________________________________________
@@ -47,7 +49,11 @@
 The end result should be an array of numbers with values 2,3,4,5
  */
 
-// Your code here
+var qq= new Array(1,2,3,4);
+var q5=[];
+qq.forEach(function(x){
+  q5.push(x+1);
+});
 
 
 /**
@@ -55,5 +61,6 @@ The end result should be an array of numbers with values 2,3,4,5
  * Using the array from Question 5, find the average of the numbers in the array (average=sum of all numbers/number of numbers). Store the average in q6.
  */
 
-
-// Your code here
+var sum=0;
+for(var i=0; i<q5.length;i++) {sum+=q5[i];}
+var q6= sum/g5.length;	
